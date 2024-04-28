@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* Element Selector */
+        /* div {
+            background-color: red;
+        } */
+
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* ID Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector */
+        /* This will be applied only if the selected part is the direc child of that tag */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendent Selector */
+        /* This will select all the para tags inside the div irrespective if its direct child or not*/
+        div p {
+            background-color: brown;
+            color: blue;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: green;
+        }
+        /* Suppose you have a link, once you visit that link, its color will become yellow. */
+
+        a:active {
+            background-color: red;
+        }
+        /* When you click the link, the color will become red */
+
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+        /* Here, only the first child will become aqua color  */
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am one</p>
+        <p>I am two</p>
+    </main>
+
+    <div class="red">
+        I am a div
+        <article>
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.facebook3.com">Go to facebook</a>
+</body>
+</html>
