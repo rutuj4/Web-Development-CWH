@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* THE SPECIFICITY IS 1 */
+        h1{
+            color:aqua;
+        }
+
+        /* THE SPECIFICITY IS 1 + 10 = 11 */
+        h1.yellow{
+            color: yellow;
+        }
+
+        /* THE SPECIFICITY IS 10 */
+        .cred{
+            color: red;
+        }
+
+        /* THE SPECIFICITY IS 10 */
+        .cpurple {
+            color: purple;
+        }
+
+/* Specificity calculation */
+        /* Universal selectror: 0
+        Element selectror & pseudo element: 1
+        Class selector, attributes & pseudo classes: 10
+        ID Selector: 100
+        Inline style: 1000 */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+</html>
